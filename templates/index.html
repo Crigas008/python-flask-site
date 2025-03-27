@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Сайт с Python бэкендом</h1>
+        <nav>
+            <a href="#server">Сервер</a>
+            <a href="#calc">Вычисления</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="server">
+            <h2>Информация о сервере</h2>
+            <div class="info-card">
+                <p><strong>ОС:</strong> {{ server.os }}</p>
+                <p><strong>Python версия:</strong> {{ server.python_version }}</p>
+                <p><strong>Текущее время:</strong> {{ server.current_time }}</p>
+            </div>
+        </section>
+
+        <section id="calc">
+            <h2>Пример вычислений</h2>
+            <div class="info-card">
+                <p>15 + 3 = {{ calculations.sum }}</p>
+                <p>15 - 3 = {{ calculations.difference }}</p>
+                <p>15 × 3 = {{ calculations.product }}</p>
+                <p>15 ÷ 3 = {{ calculations.quotient }}</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© {{ server.current_time[:4] }} Чистый Python проект</p>
+    </footer>
+</body>
+</html>
