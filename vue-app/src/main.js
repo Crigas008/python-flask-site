@@ -1,14 +1,14 @@
-import Vue from 'vue'
+import { createApp } from 'vue' // Для Vue 3
 import App from './App.vue'
 
 let app = null
 
 export const mount = (container) => {
-  app = new Vue({
-    render: h => h(App)
-  }).$mount(container)
+  app = createApp(App)
+  app.mount(container)
 }
 
 export const unmount = () => {
-  app.$destroy()
+  app.unmount()
+  app = null
 }

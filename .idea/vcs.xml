@@ -3,6 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/angular-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/react-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react-app/public" vcs="Git" />
   </component>
 </project>
